@@ -1,0 +1,7 @@
+server:
+  port: 15100
+  servlet:
+    context-path: /library
+spring:
+  application:
+    name: library

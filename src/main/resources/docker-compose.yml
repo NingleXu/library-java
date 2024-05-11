@@ -1,0 +1,13 @@
+version: "3"
+services:
+  library-java:
+    image: library-java:1.0
+    container_name: library-java
+    environment:
+      - TZ=Asia/Shanghai
+    ports:
+      - "15100:15100"
+    volumes:
+      - /usr/local/project/library/data:/data
+    cap_add:
+      - SYS_PTRACE
